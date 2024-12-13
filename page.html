@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devils Creation - ImageGen</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">DEVILS CREATION</a>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#generate">GENERATE IMAGE</a></li>
+                <li><a href="#history">HISTORY</a></li>
+                <li><a href="#report">REPORT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div id="universe"></div>
+            <div class="hero-content">
+                <h1>Create Your Fantasies & Creations</h1>
+                <p>Transform your ideas into stunning visuals using our advanced AI image generator</p>
+                <a href="#generate" class="cta-button">
+                    Get Started
+                    <svg class="icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            fill-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            clip-rule="evenodd"
+                        ></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+
+        <section id="generate" class="generator">
+            <h2>Generate Your Image</h2>
+            <div class="generator-container">
+                <div class="input-area">
+                    <textarea placeholder="Describe your image..."></textarea>
+                    <button class="btn">
+                        <svg height="24" width="24" fill="#FFFFFF" viewBox="0 0 24 24" data-name="Layer 1" id="Layer_1" class="sparkle">
+                            <path d="M10,21.236,6.755,14.745.264,11.5,6.755,8.255,10,1.764l3.245,6.491L19.736,11.5l-6.491,3.245ZM18,21l1.5,3L21,21l3-1.5L21,18l-1.5-3L18,18l-3,1.5ZM19.333,4.667,20.5,7l1.167-2.333L24,3.5,21.667,2.333,20.5,0,19.333,2.333,17,3.5Z"></path>
+                        </svg>
+                        <span class="text">Generate</span>
+                    </button>
+                </div>
+                <div class="output-area">
+                    <div class="image-placeholder">
+                        Your generated image will appear here
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="history-viewer">
+            <div class="history-header">
+                <h2>Your History :</h2>
+                <div class="history-buttons">
+                    <button class="delete-history-btn" style="display: none; background-color: #ff4d4d; color: white; border: none; border-radius: 5px; padding: 10px;">
+                        <i class="fas fa-trash"></i> Clear History
+                    </button>
+                    <button class="generate-history-btn" style="display: block;">
+                        <i class="fas fa-plus"></i> Generate Image
+                    </button>
+                </div>
+            </div>
+            <div class="history-container">
+                <!-- History items will be dynamically added here -->
+            </div>
+        </section>
+        
+        <section id="about" class="about">
+            <h2 class="about-h">ImageGen</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>ImageGen uses cutting-edge AI technology to transform text descriptions into stunning visual content.</p>
+                    <p>Perfect for artists, designers, and creative professionals looking for inspiration.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <center><hr class="hrl"></center>
+
+    <footer class="footer">
+        <div class="footer-container">
+    
+          <!-- Section 1: Empty for Logo, Name, Report Options -->
+          <div class="footer-section footer-logo">
+            <!-- Space for logo, name, report options -->
+             <a href="page.html"><h2>DEVILS CREATION</h2></a>
+          </div>
+    
+          <!-- Section 2: API, FAQ, Blog, Support -->
+          <div class="footer-section">
+            <ul>
+              <li><a href="#">API</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+    
+          <!-- Section 3: Contact, Careers, Affiliate Program, Create an Issue -->
+          <div class="footer-section">
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Pull Requests</a></li>
+              <li><a href="#">Create an Issue</a></li>
+            </ul>
+    
+            <!-- Social Media Icons -->
+            <div class="social">
+              <h4>Social</h4>
+              <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/polymer/3.4.1/polymer-element.js"></script>
+    <script src="main.js"></script>
+    <script src="gen.js"></script>
+</body>
+</html>
