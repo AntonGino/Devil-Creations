@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Logo';
-    src: url('../fonts/logo.ttf') format('truetype');
+    src: url('/fonts/logo.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Head';
-    src: url('../fonts/Hero-head.otf') format('truetype');
+    src: url('/fonts/Hero-head.otf') format('truetype');
 }
 
 :root {
