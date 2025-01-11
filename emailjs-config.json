@@ -1,0 +1,11 @@
+{
+    "emailjs": {
+        "serviceID": "service_mscm3dd",
+        "templateID": "template_hna8wid",
+        "userID": "_eqrL6Awn_Myg5WT_",
+        "templateParams": {
+            "to_name": "Subscriber",
+            "from_name": "DevilCreations AI"
+        }
+    }
+} 
