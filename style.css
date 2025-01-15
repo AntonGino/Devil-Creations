@@ -255,8 +255,8 @@ nav a{
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    color: #ffffff; /* Changed to white for better contrast */
-    background: linear-gradient(135deg, #6a0dad, #a45ee5); /* Purple gradient */
+    color: #ffffff;
+    background: linear-gradient(135deg, #6a0dad, #a45ee5);
     border-style: solid;
     border-width: 2px;
     border-color: rgba(255, 255, 255, 0.333);
@@ -270,8 +270,8 @@ nav a{
 
 
 .lightning-btn:hover {
-    color: #ffffff; /* Changed to white for better contrast */
-    background: linear-gradient(135deg, #8a2be2, #e853ff); /* Lighter purple gradient on hover */
+    color: #ffffff;
+    background: linear-gradient(135deg, #8a2be2, #e853ff);
     transform: translateY(-3px);
 }
 
@@ -336,7 +336,6 @@ nav a{
 }
 
 
-/* Products Section */
 #products {
     padding: 8rem 10% !important;
     text-align: center;
@@ -421,7 +420,6 @@ nav a{
     transform: scale(1.05);
 }
 
-/* Tech Stack Section */
 #tech-stack {
     padding: 3rem 0;
     background: rgba(255, 255, 255, 0.02);
@@ -488,7 +486,6 @@ nav a{
     }
 }
 
-/* Keep the gradient overlays */
 .logos-container::before,
 .logos-container::after {
     content: '';
@@ -528,7 +525,6 @@ nav a{
     transform: translateY(-5px);
 }
 
-/* Update company name colors */
 .logo-item span {
     font-family: "Oswald", serif;
     font-optical-sizing: auto;
@@ -541,20 +537,19 @@ nav a{
     letter-spacing: 1px;
 }
 
-/* Remove the specific company colors */
 .logo-item.bfl span,
 .logo-item.hf span,
 .logo-item.firebase span {
-    color: #A09F9F;  /* Override previous specific colors */
+    color: #A09F9F; 
 }
 
-/* Remove the animation and gradients */
+
 .logos-container::before,
 .logos-container::after {
     display: none;
 }
 
-/* Update responsive styles */
+
 @media (max-width: 768px) {
     .logos-slide {
         flex-direction: column;
@@ -574,13 +569,13 @@ nav a{
         transform: translateY(0);
     }
     
-    /* Stagger the animation delay for each item */
+    
     .logo-item:nth-child(1) { transition-delay: 0.1s; }
     .logo-item:nth-child(2) { transition-delay: 0.3s; }
     .logo-item:nth-child(3) { transition-delay: 0.5s; }
 }
 
-/* Update Tech Stack mobile styles */
+
 @media (max-width: 768px) {
     .logos-container {
         height: 13rem;
@@ -589,15 +584,15 @@ nav a{
 
     .logos-slide {
         display: flex;
-        flex-direction: row;  /* Keep horizontal layout */
-        animation: scrollMobile 15s linear infinite;  /* Faster animation */
+        flex-direction: row; 
+        animation: scrollMobile 15s linear infinite;
         gap: 3rem;
     }
 
     .logo-item {
         flex: 0 0 auto;
-        width: 120px;  /* Fixed width for mobile */
-        min-width: 120px;  /* Ensure minimum width */
+        width: 120px;
+        min-width: 120px; 
     }
 
     .logo-item img {
@@ -619,15 +614,15 @@ nav a{
             opacity: 1;
         }
         90.1% {
-            opacity: 0;  /* Hide immediately after reaching left side */
+            opacity: 0; 
         }
         99.9% {
             transform: translateX(50%);
-            opacity: 0;  /* Stay hidden while moving back */
+            opacity: 0; 
         }
         100% {
             transform: translateX(50%);
-            opacity: 1;  /* Show only when back at start */
+            opacity: 1; 
         }
     }
 
@@ -641,7 +636,6 @@ nav a{
     }
 }
 
-/* Support Section */
 #support {
     padding: 6rem 10% !important;
     text-align: center;
@@ -673,7 +667,7 @@ nav a{
     transform: scale(1.05);
 }
 
-/* About Section */
+
 #about {
     padding: 5rem 10% !important;
     text-align: center;
@@ -686,7 +680,6 @@ nav a{
     font-size: 1.1rem;
 }
 
-/* Footer */
 footer {
     background: linear-gradient(to right, #0a0a0a, #1a1a1a);
     padding: 4rem 5% 0;
@@ -845,7 +838,7 @@ footer {
     }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .hero-content h1 {
         font-size: 3rem;
@@ -904,14 +897,13 @@ footer {
     }
 }
 
-/* Update section headings */
+
 section h2 {
     font-size: 2.5rem;
     margin-bottom: 3rem;
     text-align: center;
 }
 
-/* Update mobile animation */
 @media (max-width: 768px) {
     .logos-slide {
         animation: scrollMobile 15s linear infinite;
@@ -928,15 +920,15 @@ section h2 {
             opacity: 1;
         }
         90.1% {
-            opacity: 0;  /* Hide immediately after reaching left side */
+            opacity: 0; 
         }
         99.9% {
             transform: translateX(50%);
-            opacity: 0;  /* Stay hidden while moving back */
+            opacity: 0; 
         }
         100% {
             transform: translateX(50%);
-            opacity: 1;  /* Show only when back at start */
+            opacity: 1; 
         }
     }
 
@@ -950,9 +942,9 @@ section h2 {
     }
 }
 
-/* Add badge styles */
+
 .card {
-    position: relative;  /* Add this to position the badge */
+    position: relative; 
 }
 
 .badge {
@@ -971,7 +963,7 @@ section h2 {
     z-index: 2;
 }
 
-/* Optional: Add animation */
+
 @keyframes pulse {
     0% { transform: scale(1); }
     50% { transform: scale(1.05); }
@@ -982,7 +974,7 @@ section h2 {
     animation: pulse 2s infinite;
 }
 
-/* Responsive adjustment */
+
 @media (max-width: 768px) {
     .badge {
         top: -8px;
@@ -992,7 +984,7 @@ section h2 {
     }
 }
 
-/* Add popup styles */
+
 .popup {
     display: none;
     position: fixed;
