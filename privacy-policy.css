@@ -73,7 +73,7 @@
     font-weight: 500;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .privacy-policy {
         padding: 100px 5% 40px;
