@@ -7,7 +7,7 @@ menuIcon.addEventListener('click', () => {
     document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : 'auto';
 });
 
-// Close menu when clicking a link
+
 document.querySelectorAll('.mobile-nav a').forEach(link => {
     link.addEventListener('click', () => {
         menuIcon.classList.remove('active');
@@ -31,16 +31,16 @@ function handleLogoAnimation() {
     logos.forEach(logo => observer.observe(logo));
 }
 
-// Call the function when the page loads
+
 document.addEventListener('DOMContentLoaded', handleLogoAnimation);
 
-// Initialize Email.js with config
+// Email.js
 fetch('emailjs-config.json')
     .then(response => response.json())
     .then(config => {
         emailjs.init(config.emailjs.userID);
 
-        // Handle newsletter form submission
+        
         document.getElementById('newsletter-form').addEventListener('submit', function(event) {
             event.preventDefault();
 
@@ -51,7 +51,7 @@ fetch('emailjs-config.json')
 
             const userEmail = this.querySelector('input[name="user_email"]').value;
 
-            // Use config values from JSON
+            // Configs
             emailjs.send(
                 config.emailjs.serviceID,
                 config.emailjs.templateID,
@@ -69,25 +69,24 @@ fetch('emailjs-config.json')
                 btn.style.cursor = 'default';
                 this.querySelector('input').disabled = true;
                 
-                // Show custom popup
+                
                 const popup = document.getElementById('subscribePopup');
                 const subscriberEmail = document.querySelector('.subscriber-email');
                 subscriberEmail.textContent = userEmail;
                 popup.classList.add('active');
                 
-                // Close popup when clicking close button
+                
                 document.querySelector('.popup-close').addEventListener('click', () => {
                     popup.classList.remove('active');
                 });
 
-                // Close popup when clicking outside
+                
                 popup.addEventListener('click', (e) => {
                     if (e.target === popup) {
                         popup.classList.remove('active');
                     }
                 });
 
-                // Update email template parameters
                 emailjs.send(
                     config.emailjs.serviceID,
                     config.emailjs.templateID,
@@ -110,10 +109,9 @@ Subscribed Email: ${userEmail}`
         });
     });
 
-// Initialize GSAP
+// GSAP
 gsap.registerPlugin(ScrollTrigger);
 
-// Hero section animations
 gsap.from('.hero-content h1, .hero-content p, .lightning-btn', {
     scrollTrigger: {
         trigger: '#hero',
@@ -128,7 +126,6 @@ gsap.from('.hero-content h1, .hero-content p, .lightning-btn', {
     ease: "power4.out"
 });
 
-// Products section animations
 gsap.from('#products h2', {
     scrollTrigger: {
         trigger: '#products',
@@ -154,7 +151,6 @@ gsap.from('.card', {
     stagger: 0.2
 });
 
-// Tech Stack section animations - only appear, no disappear
 gsap.from('#tech-stack h2', {
     scrollTrigger: {
         trigger: '#tech-stack',
@@ -191,7 +187,6 @@ gsap.from('.support-card', {
     duration: 0.8
 });
 
-// About section animations
 gsap.from('#about h2', {
     scrollTrigger: {
         trigger: '#about',
@@ -216,7 +211,6 @@ gsap.from('.about-content p', {
     duration: 0.8
 });
 
-// Footer animations - only appear, no disappear
 gsap.from('.footer-section', {
     scrollTrigger: {
         trigger: 'footer',
