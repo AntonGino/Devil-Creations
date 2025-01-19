@@ -218,6 +218,7 @@ nav a{
     justify-content: space-between;
     position: relative;
     overflow: hidden;
+    margin-bottom: -2rem;
 }
 
 .hero-content {
@@ -866,6 +867,7 @@ footer {
     
     #hero {
         padding: 0 5%;
+        margin-bottom: -4.5rem;
     }
 
     .card{
@@ -879,11 +881,13 @@ footer {
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 2.5rem;
+        margin-top: -1rem;
     }
 
     .hero-cta {
         flex-direction: column;
         width: 100%;
+        margin-top: -1rem;
     }
 
     .lightning-btn,
@@ -1070,4 +1074,141 @@ section h2 {
     100% {
         transform: scale(1);
     }
+}
+
+.h-card {
+  --bg-color: transparent;
+  padding: 1rem 0;
+  border-radius: 1.25rem;
+  margin-bottom: -1.5rem;
+  display: block; /* Show by default on desktop */
+}
+
+.loader {
+  color: rgb(124, 124, 124);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  box-sizing: content-box;
+  height: 40px;
+  padding: 10px 10px;
+  display: flex;
+  border-radius: 8px;
+}
+
+.words {
+  overflow: hidden;
+  position: relative;
+  margin-left: 0.05rem;
+  bottom: 5px;
+}
+
+.words::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+}
+
+.word {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: #956afa;
+  animation: spins-hero 4s infinite;
+}
+
+@keyframes spins-hero {
+  10% {
+    transform: translateY(-102%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-202%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-302%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-402%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .h-card {
+    padding-left: 0.35rem;
+    display: none; /* Hide animated text on mobile */
+  }
+
+  .words {
+    bottom: 0;
+  }
+
+  .loader {
+    font-size: 18px;
+    height: 30px;
+    padding: 5px 5px;
+  }
+
+  .loader p {
+    font-size: 16px;
+  }
+  
+  .hero-content .original-text {
+    display: block; /* Show original text on mobile */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .h-card {
+    padding: 0.25rem 0.5rem;
+  }
+
+  .loader {
+    font-size: 16px;
+    height: 25px;
+    padding: 3px 3px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .loader p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+}
+
+/* Add this original hero paragraph style */
+.hero-content .original-text {
+  font-size: 1rem;
+  display: none; /* Hide by default on desktop */
+}
+
+@media screen and (max-width: 768px) {
+  .h-card {
+    display: none; /* Hide animated text on mobile */
+  }
+  
+  .hero-content .original-text {
+    display: block; /* Show original text on mobile */
+    color: #8a8a8a;
+  }
 }
