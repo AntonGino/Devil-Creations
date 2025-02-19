@@ -39,7 +39,7 @@ Welcome to the **DevilCreations AI**! This is the platform where innovation meet
 
 1. Clone the repository:  
    ```bash
-   git clone https://github.com/AntonGino/Devi-Creations.git
+   git clone https://github.com/AntonGino/Devil-Creations.git
    ```
 
 5. Open your IDE and navigate to index.html and open using Live Server (extension):
