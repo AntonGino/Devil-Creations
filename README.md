@@ -24,12 +24,13 @@ Welcome to the **DevilCreations AI**! This is the platform where innovation meet
 - **Data Management**  
   Store and manage Data to keep track of your creative experiments.  
 
+- **More things coming soon..**
 ---
 
 ## 🌐 Technologies Used
 
 - **Frontend**: HTML, CSS, JavaScript (ES6)  
-- **Backend**: Google Firebase for database and authentication  
+- **Auth & Database**: Google Firebase for database and authentication  
 - **AI Models**: Integration with leading open-source and proprietary generative models  
 
 ---
